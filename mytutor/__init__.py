@@ -23,7 +23,7 @@ class MyTutor(Magics):
     @argument('-lang',
               '--language',
               type=str,
-              default=3,
+              default='3',
               help="The language of the output (default: python3).")
     # @cell_magic
     # def mytutor(self, line, cell):
