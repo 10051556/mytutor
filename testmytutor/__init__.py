@@ -24,7 +24,7 @@ class TestMyTutor(Magics):
               '--language',
               type=str,
               default='3',
-              help="The language of the output (default: python3).")
+              help="The language of the output (default: python3). \n2 = python2 \n3 = python3 \npyanaconda = Anaconda\njava = java")
     # @cell_magic
     # def mytutor(self, line, cell):
     #     opts = parse_argstring(self.mytutor, line)
@@ -46,4 +46,4 @@ def load_ipython_extension(ipython):
     Register the magics with a running IPython so the magics can be loaded via
      `%load_ext mytutor` or be configured to be autoloaded by IPython at startup time.
     """
-    ipython.register_magics(TestMyTutor)
+    ipython.register_magics(TestMyTutor, magic_name = "testmytutor")
