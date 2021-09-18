@@ -22,7 +22,7 @@ setup(
         "Programming Language :: Python",
         "License :: OSI Approved :: MIT License",
     ],
-    packages=["mytutor"],
+    packages=["testmytutor"],
     include_package_data=True,
     install_requires=[
         "notebook",
