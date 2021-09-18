@@ -44,6 +44,6 @@ class TestMyTutor(Magics):
 def load_ipython_extension(ipython):
     """
     Register the magics with a running IPython so the magics can be loaded via
-     `%load_ext mytutor` or be configured to be autoloaded by IPython at startup time.
+     `%load_ext testmytutor` or be configured to be autoloaded by IPython at startup time.
     """
     ipython.register_magics(TestMyTutor, magic_name = "testmytutor")
