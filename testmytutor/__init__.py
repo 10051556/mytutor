@@ -37,7 +37,7 @@ class TestMyTutor(Magics):
         opts = parse_argstring(self.testmytutor, line)
         if opts.run:
             result = self.shell.run_cell(cell)
-        url = "https://mytutor.cs.cityu.edu.hk/opt/cs1302visualize.html#mode=display&py=" + opts.language + "&code=" + quote(cell, safe='')
+        url = "https://mytutor.cs.cityu.edu.hk/opt2/cs1302visualize.html#mode=display&py=" + opts.language + "&code=" + quote(cell, safe='')
         display(IFrame(url, width=opts.width, height=opts.height))
 
 
