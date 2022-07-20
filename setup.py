@@ -9,12 +9,12 @@ README = (HERE / "README.md").read_text()
 
 # This call to setup() does all the work
 setup(
-    name="testmytutor",
+    name="mytutor",
     version="1.0.3",
     description="test Jupyter notebook magic cell wrapper for online python tutor.",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/cth-dev/mytutor",
+    url="https://github.com/ccha23/mytutor",
     author="Chung Chan",
     license="MIT",
     classifiers=[
@@ -22,7 +22,7 @@ setup(
         "Programming Language :: Python",
         "License :: OSI Approved :: MIT License",
     ],
-    packages=["testmytutor"],
+    packages=["mytutor"],
     include_package_data=True,
     install_requires=[
         "notebook",

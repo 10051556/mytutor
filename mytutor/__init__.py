@@ -7,7 +7,7 @@ from urllib.parse import quote
 
 
 @magics_class
-class TestMyTutor(Magics):
+class Mytutor(Magics):
     @magic_arguments()
     @argument('-w',
               '--width',
@@ -33,8 +33,8 @@ class TestMyTutor(Magics):
     #     url = "https://e-quiz.cs.cityu.edu.hk/opt/cs1302visualize.html#mode=display&code="+quote(cell, safe='')
     #     display(IFrame(url, width=opts.width, height=opts.height))
     @cell_magic
-    def testmytutor(self, line, cell):
-        opts = parse_argstring(self.testmytutor, line)
+    def mytutor(self, line, cell):
+        opts = parse_argstring(self.mytutor, line)
         if opts.run:
             result = self.shell.run_cell(cell)
         url = "https://mytutor.cs.cityu.edu.hk/opt3/cs1302visualize.html#mode=display&py=" + opts.language + "&code=" + quote(cell, safe='')
@@ -44,6 +44,6 @@ class TestMyTutor(Magics):
 def load_ipython_extension(ipython):
     """
     Register the magics with a running IPython so the magics can be loaded via
-     `%load_ext testmytutor` or be configured to be autoloaded by IPython at startup time.
+     `%load_ext mytutor` or be configured to be autoloaded by IPython at startup time.
     """
-    ipython.register_magics(TestMyTutor)
+    ipython.register_magics(Mytutor)
