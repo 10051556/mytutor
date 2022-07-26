@@ -14,7 +14,7 @@ setup(
     description="test Jupyter notebook magic cell wrapper for online python tutor.",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/cth-dev/mytutor",
+    url="https://github.com/ccha23/mytutor",
     author="Chung Chan",
     license="MIT",
     classifiers=[
