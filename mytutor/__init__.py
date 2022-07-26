@@ -23,7 +23,7 @@ class Mytutor(Magics):
     @argument('-lang',
               '--language',
               type=str,
-              default='pyodide',
+              default='3',
               help="The language of the output (default: python3). \n2 = python2 \n3 = python3 \npyanaconda = Anaconda\njava = java")
     # @cell_magic
     # def mytutor(self, line, cell):
