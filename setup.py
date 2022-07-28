@@ -25,6 +25,5 @@ setup(
     packages=["mytutor"],
     include_package_data=True,
     install_requires=[
-        "notebook",
     ],
 )
